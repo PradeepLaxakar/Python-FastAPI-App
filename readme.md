@@ -18,6 +18,6 @@ uvicorn app.main:app
 ## startup command
 gunicorn -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 app.main:app
 
-# 3. # 2. Run in Azure Web app (Container). 
+# 3. Run in Azure Web app (Container). 
 #### Connection = Repo
 
