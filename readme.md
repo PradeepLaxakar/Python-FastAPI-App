@@ -1,3 +1,5 @@
+# Port: 8000
+
 # 1. Run in local (Win11)
 Open your terminal in the project folder and run these commands: 
 
