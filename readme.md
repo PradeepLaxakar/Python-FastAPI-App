@@ -1,4 +1,4 @@
-# Run in local (Win11)
+# 1. Run in local (Win11)
 Open your terminal in the project folder and run these commands: 
 
 ## Install dependencies:
@@ -12,10 +12,12 @@ uvicorn app.main:app --reload
 ## Start without reload
 uvicorn app.main:app 
 
-# Run in Azure Web app (Python). 
-#### Type = Code
+# 2. Run in Azure Web app (Code). 
 #### Connection = Repo
 
 ## startup command
 gunicorn -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 app.main:app
+
+# 3. # 2. Run in Azure Web app (Container). 
+#### Connection = Repo
 
