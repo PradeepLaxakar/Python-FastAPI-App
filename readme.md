@@ -30,11 +30,11 @@ python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 # 3. Run in container in local
 ```
-docker build -t fast:v1 -f docker-files/Dockerfile .
+docker build -t <USER-NAME>fast:v1 -f docker-files/Dockerfile .
 ```
 
 ```
-docker run -p 8000:8000 fast:v1
+docker run -p 8000:8000 <USER-NAME>fast:v1
 ```
 
 # 4. Run in Azure Web app (Container)
