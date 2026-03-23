@@ -36,4 +36,6 @@ docker run -p 8000:8000 fast:v1
 ```
 
 # 4. Run in Azure Web app (Container)
-#### Connection = Repo
+```
+Leave startup command blank. It will take from Dockerfile
+```
