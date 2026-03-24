@@ -1,0 +1,21 @@
+name: P2
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Docker-Hub-Dev7495-PAT'
+    repository: 'dev7495/fast'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+
+- task: AzureWebAppContainer@1
+  inputs:
+    azureSubscription: 'Pay-As-You-Go (4f0e5ac1-0e6d-4ddf-a2f5-13eed2179f41)'
+    appName: 'spsu'
+    containers: 'dev7495/fast:$(Build.BuildId)'
