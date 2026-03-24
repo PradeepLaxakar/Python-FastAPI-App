@@ -24,8 +24,9 @@ def read_root():
     return f"""
     <html>
         <body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-            <h1>Hello Lovely People!</h1>
-            <h2 style="color: #0078d4;">Running on: {location}</h2>
+            <h1>Hello Lovely People :)</h1>
+            <h1>Welcome to Pradeep's Training</h1>
+            <h2 style="color: #0078d4;">This App is running on: {location}</h2>
             <p>Standard FastAPI Process</p>
         </body>
     </html>
